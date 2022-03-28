@@ -1,0 +1,41 @@
+<!-- Blog Section -->
+<section id="blog" class="inverse" ng-controller="PostFrontController">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center">
+                    <h1>Blog - Inspiración para tus viajes</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-4" ng-repeat="info in posts">
+                <div class="post wow fadeInUp blog-content">
+                    <div class="post-thumb" ng-if="!!info.front.source">
+                        <a ng-href="blog/{{info.slug}}/details">
+                            <img src="{{url_uploads+'/'+info.front.source}}" alt="{{info.title}}" />
+                            <div class="post-overlay">
+                                <i class="fa fa-link"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="post-bottom">
+                        <h3>{{info.title}}</h3>
+                        <p>{{info.description | limitTo: 120}}</p>
+                        <div class="pull-left">
+                            <span class="post-date"><i class="fa fa-calendar"></i>{{info.createdAt| date: 'd/MM/yyyy'}}</span>
+                        </div>
+                    </div>
+                </div>
+                <!--end post-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <a ng-href="blog" class="animated fadeInUp btn btn-primary page-scroll">Ver más</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end blog-->

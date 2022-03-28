@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="get-travel-market">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Cada viaje es distinto, cada pasajero es diferente y por eso Travel Market te dedica el tiempo necesario para armar tus viajes. El punto de partida a tu próximo destino está acá ... Viajes a medida">
+  <meta name="keywords"
+    content="Viajes a medida, Viajes desde Argentina, Paquetes de vacaciones, Outlet de viajes, Agencia de viajes en La Plata, Venta de paquetes de viajes en La Plata, Outlet de viajes en La Plata, Empresa de viajes en La Plata, Venta de viajes en La Plata">
+  <meta name="author" content="DIPER">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151422048-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151422048-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Ads: 698606797 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-698606797"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-698606797');
+  </script>
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-698606797/_zMMCP_UhbMBEM3Jj80C',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2453787188221328');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2453787188221328&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <title>Get in Travel Market - Travel Agency </title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <!-- ogp metadata -->
+  <meta property="og:url" content="http://gettravelmarket.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Get in Travel Market - Travel Agency" />
+  <meta property="og:image" content="http://gettravelmarket.com/img/logo-reducido.jpg" />
+  <meta property="og:description" content="Get in Travel Market - Ofrecemos viajes a tu medida." /> -
+  <!-- facebook app id  -->
+  <meta property="fb:app_id" content="131222864155676" />
+
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--Datepicker-->
+  <link href="css/datepicker.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <!--Fancybox-->
+  <link href="css/jquery.fancybox.css" rel="stylesheet">
+  <!-- font-awesome-->
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <!--Owl Carousel-->
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <!--Google Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,700' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,400italic,700' rel='stylesheet'
+    type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
+  <!-- Main CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Color switcher -->
+  <link rel="stylesheet" href="css/skin/color1.css" id="colors">
+
+  <link rel="stylesheet" href="bower_components/selectize/dist/css/selectize.default.css ">
+
+  <link rel="stylesheet"
+    href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link href="css/custom.css" rel="stylesheet">
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '626306541452126');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=626306541452126&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top">
+  <!-- Preload -->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" ng-href="/"><img src="img/logo.png" alt="Logo" /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+
+              <li>
+                <a class="page-scroll" ng-href="#services">Qué ofrecemos</a>
+              </li>
+              <li>
+                <a class="page-scroll" ng-href="#packages">Paquetes</a>
+              </li>
+
+              <li>
+                <a class="page-scroll" ng-href="#about-us">Cómo lo ofrecemos</a>
+              </li>
+              <li>
+                <a class="page-scroll" ng-href="#donde">Dónde</a>
+              </li>
+              <li>
+                <a class="page-scroll" ng-href="#quienes">Quienes</a>
+              </li>
+              <li>
+                <a class="page-scroll" ng-href="#blog">Blog</a>
+              </li>
+              <li>
+                <a class="page-scroll" ng-href="#contact-us">Contactanos</a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+  <div ng-view autoscroll></div>
+
+  <!-- Contact Us Section-->
+  <section id="contact-us" class="parallax" data-stellar-background-ratio="0.5"
+    style="background-image: url(img/bg/contact-bg.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-title text-center">
+            <h1>Ponte en contacto</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="contact-left">
+            <ul>
+              <li>
+                <div class="icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="contact-info">
+                  <p>36 N°866 La Plata 1900 Argentina</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">
+                  <i class="fa fa-whatsapp"></i>
+                </div>
+                <div class="contact-info">
+                  <p>+549 221 3577330</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="contact-info">
+                  <p>0221 492 2210</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                  <p><a href="mailto:contacto@gettravelmarket.com">contacto@gettravelmarket.com</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">
+                  <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="contact-info">
+                  <p>Lunes-Viernes: 9am - 6pm <br /> Sábado y Domingo - Cerrado </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-8" ng-controller="ContactController">
+          <div class="contact-right">
+            <form ng-submit="send()">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <input type="text" ng-model="name" name="nombre" class="form-control" placeholder='Nombre'>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <input type="text" ng-model="lastname" name="apellido" class="form-control" placeholder='Apellido'>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <input type="text" ng-model="phone" name="telefono" class="form-control" placeholder='Telefono'>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" ng-model="email" required="true" name="_replyto" class="form-control"
+                  placeholder='Mail'>
+              </div>
+              <div class="form-group">
+                <input type="text" ng-model="subject" name="asunto" class="form-control" placeholder='Asunto'>
+              </div>
+              <div class="form-group">
+                <textarea ng-model="body" class="form-control" rows="6" cols="20" name="consulta"
+                  placeholder="Escribe tu consulta"></textarea>
+              </div>
+              <div class="form-group">
+                <div vc-recaptcha ng-model="vm.od_captcha" on-create="setRecaptchaId(widgetId)"></div>
+              </div>
+              <input type="submit" class="btn btn-primary" value="Enviar">
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--end contact-us-->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-5">
+          <div class="text-left">
+            <ul>
+              <li><a href="https://www.facebook.com/GetTravelMarket" target="_blank"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="https://twitter.com/GetTravelMarket" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/gettravelmarket/" target="_blank"><i
+                    class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+          <div class="text-right">
+            <p>&copy; Copyright 2017. Todos los derechos reservados. Realizado por <b><a href="http://www.diper-it.com"
+                  target="_blank">diper<b></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:1em">
+        <div class="col-xs-12 col-md-2">
+          <a href="http://qr.afip.gob.ar/?qr=mAPfBON8n14n0CY14yFU_g,," target="_F960AFIPInfo"><img
+              src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" style="height: 200px"></a>
+        </div>
+        <div class="col-xs-12 col-md-10">
+          <p style="line-height:20px">
+            JUALEG CONECTAR S.R.L. - Evt: Get In Travel Market - Leg: 16.745- Disp: 791/16 - Cuit Nº 30-71535474-4 El
+            titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma
+            gratuita a intervalos no
+            inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el
+            artículo 14, inciso 3 de la Ley Nº 25.326. La Dirección Nacional de Protección de Datos de Personas, Órgano
+            de Control de la
+            Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al
+            incumplimiento de las normas sobre protección de datos personales.</p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bact to top Section-->
+  <div class="back-top">
+    <a ng-href="#page-top"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <div class="whatsapp" style="margin-bottom:3em;">
+    <a ng-href="https://wa.me/542213577330"><i class="fa fa-whatsapp"></i></a>
+  </div>
+
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBlKGTsCGILq91T17I9B1mnRlfkGIaJ9lQ"></script>
+  <script src="js/gmap3.min.js"></script>
+  <script type="text/javascript" src="js/switcher.js"></script>
+  <script src="js/script.js"></script>
+
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/angular/angular-route.min.js"></script>
+  <script src="js/angular/app.js"></script>
+  <script src="js/angular/config.js"></script>
+  <script src="js/angular/controllers.js"></script>
+  <script src="js/angular/directives/directives.js"></script>
+  <script src="js/angular/controllers/postController.js"></script>
+  <script src="js/angular/controllers/packageController.js"></script>
+  <script src="js/angular/controllers/homeController.js"></script>
+  <script src="js/angular/controllers/serviceController.js"></script>
+  <script src="js/angular/services/restService.js"></script>
+  <script src="js/angular/services/locationSearchService.js"></script>
+  <script src="js/angular/angular-cookies.min.js"></script>
+  <script src="js/angular/angular-messages.min.js"></script>
+  <script src="js/angular/angular-resource.min.js"></script>
+  <!-- angular socialshare load -->
+  <script src="bower_components/angular-socialshare/dist/angular-socialshare.min.js"></script>
+
+  <script type="text/javascript" src="node_modules/angular-recaptcha/release/angular-recaptcha.min.js"></script>
+
+  <script type="text/javascript" src="bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-selectize2/dist/angular-selectize.js"></script>
+  <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="bower_components/moment/min/locales.min.js"></script>
+  <script type="text/javascript"
+    src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-98267597-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

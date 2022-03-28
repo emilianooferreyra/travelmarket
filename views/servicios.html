@@ -1,0 +1,82 @@
+<!-- Page Title-->
+<section id="page-title" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/banner/1.jpg);">
+  <div class="title-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-title text-center">
+            <h1>Servicios</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end title-info-->
+</section>
+<!--end page-title-->
+<!-- Main Content -->
+<section id="services">
+
+
+  <div ng-class="{'container': activeService !== 'seguros' , 'container-fluid-seguros': activeService == 'seguros' }">
+
+    <div class="row" ng-if="activeService == 'vuelos'">
+      <div class="col-xs-12">
+        <div class="section-title text-center">
+          <h1>Vuelos</h1>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div style="text-align:center" id="spinner-vuelos">
+          <div>
+            <img src="/img/loader.gif" alt="Imagen de carga"/>
+          </div>
+        </div>
+      </div>
+      <iframe id="iframe" scrolling="no" frameborder="0" width='100%' style="height: 40em; max-height:40em;" src="http://www.mundigea.com.ar/vuelos/?user_id=643&mode=iframe" scrolling="no" onload="document.getElementById('spinner-vuelos').style.display='none';"></iframe>
+    </div>
+
+    <div class="row" ng-if="activeService == 'cruceros'">
+      <div class="col-xs-12">
+        <div class="section-title text-center">
+          <h1>Cruceros</h1>
+        </div>
+        <div class="col-xs-12">
+          <div style="text-align:center" id="spinner-cruceros">
+            <div>
+              <img src="/img/loader.gif" alt="Imagen de carga" />
+            </div>
+          </div>
+        </div>
+        <iframe  scrolling="yes" frameborder="0" width='100%' style="height: 40em; max-height:inherit; " framespacing="0" id="iframe" src="http://mundigea.com.ar/?module=cruceros&user_id=643" onload="document.getElementById('spinner-cruceros').style.display='none';"></iframe>
+      </div>
+    </div>
+
+    <div class="row" ng-if="activeService == 'hoteles'">
+      <div class="col-xs-12">
+        <div class="section-title text-center">
+          <h1>Hoteles</h1>
+        </div>
+        <div class="col-xs-12">
+          <div style="text-align:center" id="spinner-hoteles">
+            <div>
+              <img src="/img/loader.gif" alt="Imagen de carga"/>
+            </div>
+          </div>
+        </div>
+        <iframe scrolling="yes" frameborder="0" width='100%' style="height: 40em; max-height:inherit; " framespacing="0" id="iframe" src="http://mundigea.com.ar/?module=hoteles&user_id=643" onload="document.getElementById('spinner-hoteles').style.display='none';"></iframe>
+      </div>
+
+    </div>
+    <div class="row" ng-if="activeService == 'seguros'">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12" style="margin-bottom: -3.2em; margin-top: -3.2em">
+            <img src="/img/tarjetas/seguro.jpg" class="img-responsive img-grande" alt="Imagen Assist Card"/>
+            <img src="/img/tarjetas/seguro-mobile.jpg" class="img-responsive img-chica" alt="Imagen Assist Card"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

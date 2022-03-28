@@ -1,0 +1,91 @@
+<!-- Page Title-->
+<section
+  id="page-title"
+  class="parallax"
+  data-stellar-background-ratio="0.5"
+  style="background-image: url(img/banner/1.jpg)"
+>
+  <div class="title-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-title text-center">
+            <h1>Paquetes</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end title-info-->
+</section>
+<!--end page-title-->
+<!-- Blog Section -->
+<section class="inverse">
+  <div class="container">
+    <!-- starred packages -->
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-4" ng-repeat="info in packages">
+        <div class="package-list wow fadeInUp">
+          <a href="#" style="cursor: default">
+            <div class="package-thumb">
+              <img
+                ng-src="{{!!info.front ? url_uploads+'/'+info.front.source : 'img/packages/1.jpg'}}"
+                alt="{{info.city}}"
+              />
+              <div class="duration" ng-if="!!info.days || !!info.nights">
+                {{!!info.days ? info.days + ' días' : ''}}<br
+                  ng-if="!!info.days && !!info.nights"
+                />{{!!info.nights ? info.nights + ' noches' : ''}}
+              </div>
+            </div>
+          </a>
+          <div class="package-info">
+            <div class="row package-info-header">
+              <div class="col-xs-8">
+                <h3 class="package-title">
+                  {{ info.city}} {{ info.country}} {{ info.beach}}
+                </h3>
+              </div>
+              <div class="col-xs-4">
+                <div class="duration">
+                  {{!!info.price ? (info.currency | currencySymbolFilter) +
+                  info.price : 'Consulte'}}
+                </div>
+              </div>
+              <!--<div class="col-xs-4">
+                                <div class="duration" ng-if="!!info.days">
+                                    {{info.days}} días
+                                </div>
+                            </div>-->
+            </div>
+            <div class="row" style="padding-left: 20px; padding-right: 20px">
+              <div class="col-xs-12">
+                <span class="pull-left">
+                  {{ info.foodRegime | foodFilter }}<br
+                    ng-if="!!info.foodRegime"
+                  />
+                  <i class="fa fa-plane" ng-if="!!info.aerial"></i>{{
+                  !!info.aerial ? 'Incluye aéreos' : '' }}<br
+                    ng-if="!!info.aerial"
+                  />
+                  <i class="fa fa-ship" ng-if="!!info.excursion"></i>{{
+                  !!info.excursion ? 'Incluye excursiones' : '' }}<br
+                    ng-if="!!info.excursion"
+                  />
+                  <i class="fa fa-bed" ng-if="!!info.accommodation"></i>{{
+                  !!info.accommodation ? 'Incluye hospedaje' : '' }}
+                </span>
+
+                <span class="pull-right post-date" ng-if="!!info.when">
+                  <i class="fa fa-calendar"></i>{{info.when | date:
+                  'd/MM/yyyy':'UTC'}}
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

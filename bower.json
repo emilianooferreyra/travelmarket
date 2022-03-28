@@ -1,0 +1,22 @@
+{
+  "name": "travelmarket",
+  "authors": [
+    "arielleguizamon <ariel.leguizamon93@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-selectize2": "^3.0.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "angular-socialshare": "angularjs-socialshare#^2.3.11"
+  }
+}

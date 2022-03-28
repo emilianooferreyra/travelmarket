@@ -1,0 +1,95 @@
+.package-list {
+  border-top: #f9d023 8px solid;
+  min-height: 680px;
+}
+
+.package-title {
+  padding: 0.5em;
+  height: 4em;
+  font-weight: 700;
+  color: #999;
+}
+
+.container-fluid-seguros {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.package-info {
+  height: 18em;
+  padding: 0.5em;
+}
+
+.package-info i {
+  margin: 0.3em;
+}
+
+.package-info-header {
+  height: 8em;
+}
+
+.duration {
+  background: #f9d023;
+}
+
+.post {
+  height: 25em;
+}
+
+.post i {
+  margin: 0.3em;
+}
+
+.back-link {
+  color: #f9d023;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.back-link i {
+  margin: 0.3em;
+}
+
+.back-link:hover {
+  color: #777;
+}
+
+.blog-content > .post-thumb,
+.blog-content > .post-thumb > a,
+.blog-content > .post-thumb > a > img {
+  height: 15em;
+}
+.blog-content > .post_thumb {
+  margin-top: 10px;
+}
+.blog-content > .post_thumb > img {
+  width: auto;
+  //max-width: 40%;
+}
+
+.blog-content > .post_gallery > div {
+  padding: 1em;
+}
+
+.filter-container .form-control {
+  color: #333;
+  height: 34px;
+  border: 1px solid #ccc;
+}
+
+.filter-container {
+  -webkit-box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.4);
+}
+
+.selectize-control {
+  border: 0;
+  padding: 0;
+}
+
+.single_post h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
