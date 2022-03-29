@@ -1,2 +1,6 @@
-angular
-    .module('controllers', ['postController', 'packageController', 'homeController', 'serviceController']);
+angular.module("controllers", [
+  "postController",
+  "packageController",
+  "homeController",
+  "serviceController",
+]);
