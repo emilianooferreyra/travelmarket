@@ -50,6 +50,6 @@ angular
   .module("get-travel-market")
   .config(config)
   .run(function ($rootScope) {
-    $rootScope.url = "http://admin.gettravelmarket.com/api";
-    $rootScope.url_uploads = "http://admin.gettravelmarket.com/api";
+    $rootScope.url = "https://travelmarket-admin.onrender.com/api";
+    $rootScope.url_uploads = "https://travelmarket-admin.onrender.com/api";
   });
