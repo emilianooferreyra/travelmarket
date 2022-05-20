@@ -51,5 +51,5 @@ angular
   .config(config)
   .run(function ($rootScope) {
     $rootScope.url = "https://travelmarket-admin.onrender.com/api";
-    $rootScope.url_uploads = "https://travelmarket-admin.onrender.com/api";
+    $rootScope.url_uploads = "https://travelmarket-admin-2.onrender.com";
   });
